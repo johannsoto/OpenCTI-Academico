@@ -1,0 +1,2964 @@
+{
+    "type": "bundle",
+    "id": "bundle--398c329f-3d6d-4cb0-bb0c-576eed96b133",
+    "objects": [
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:CLEAR",
+            "definition": {
+                "tlp": "clear"
+            }
+        },
+        {
+            "id": "indicator--7ab43e07-2947-5297-8810-ed20f1cf293b",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 100,
+            "created": "2025-07-04T17:57:51.371Z",
+            "modified": "2025-07-16T17:23:52.487Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = '4BAECA0206EFBAC721AD7288F25E7BC26982CC5C1DDB990E1FB359A2E07784EC']",
+            "name": "Troyano phishing",
+            "description": "Nombre: SEGUNDO LLAMADO DE ATENCI\u00d3N - Juzgado 14 Penal Municipal ..._zip.rev\n\nHashes:\n\nMD5: 4B21FF773582358AFCOB3871EBF4F162 (corregir O \u2192 0: 4B21FF773582358AFC0B3871EBF4F162)\n\nSHA1: 9231F2A5A4828997914D57A8A342DC47BEED2EAC\n\nSHA256: 4BAECA0206EFBAC721AD7288F25E7BC26982CC5C1DDB990E1FB359A2E07784EC\n\nTipo: RAR archive data, v5\n\nMIME: application/x-rar\n\nContenido Malicioso: Acceso directo que ejecuta file://\\77.105.161.126@80\\file\\AdobeReaderPDF2024.exe",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "valid_from": "2025-07-04T17:57:51.363Z",
+            "valid_until": "2026-04-05T15:17:23.198Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Software",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "4BAECA0206EFBAC721AD7288F25E7BC26982CC5C1DDB990E1FB359A2E07784EC"
+                        }
+                    ]
+                }
+            ],
+            "x_mitre_platforms": [
+                "windows"
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "e158332f-baba-46c3-a4c4-59a7b8794efb",
+            "x_opencti_type": "Indicator",
+            "type": "indicator",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "id": "indicator--900efaa6-3e25-5199-ab06-309fbada068c",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 100,
+            "created": "2025-07-04T17:52:32.860Z",
+            "modified": "2025-07-16T17:52:09.165Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = 'c5d1e857824c643d1e98d51fb94d559d53467d2069509bb608344be2590bb1fa']",
+            "name": "Dropper_URL_JudicialFake",
+            "description": "Nombre: c5d1e857824c643d1e98d51fb94d559d53467d2069509bb608344be2590bb1fa\n\nHashes:\n\nMD5: 38c3d668a01688f944db2ca32b33a4c0\n\nSHA1: e5655dcdece7b04001e393c3df00f5fac295338c\n\nSHA256: c5d1e857824c643d1e98d51fb94d559d53467d2069509bb608344be2590bb1fa\n\nSSDEEP: 6.JyXSvVG/FTVmJIOFJbivstXbPAbhYNraUr5q8TfdNbsv:cXaVWfmJIOFJB0tL3zdNq\n\nTipo: PE32 executable (GUI) Intel 80386, for MS Windows\n\nMIME: application/vnd.microsoft.portable-executable\n\nOrigen: Descargado desde 77.105.161.126 v\u00eda acceso directo",
+            "valid_from": "2025-07-04T17:52:32.852Z",
+            "valid_until": "2026-04-05T15:12:04.687Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Software",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "c5d1e857824c643d1e98d51fb94d559d53467d2069509bb608344be2590bb1fa"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "f6089d0b-5916-4680-9de5-6cf468c02185",
+            "x_opencti_type": "Indicator",
+            "type": "indicator",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "id": "indicator--c938bda4-5cf2-5c1b-a184-bf4003c3e258",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 100,
+            "created": "2025-07-04T17:45:32.337Z",
+            "modified": "2025-07-16T20:02:06.481Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = '4b4e5745d6e7c73c1713ba35982593ae81b514c1f7c707cf58ac244bea057df9']",
+            "name": "Unknown_Payload_2025_4B4E5745.exe",
+            "description": "Indicadores de Compromiso (IOCs) Extra\u00eddos del Documento:\nIndicador 1: Archivo Malicioso (Ejecutable)\nNombre: 4b4e5745d6e7c73c1713ba35982593ae81b514c1f7c707cf58ac244bea057df9.unknown\n\nHashes:\n\nSHA1: f27e04b2723e501cef851185774bf9dc7b1d1414\n\nSHA256: 4b4e5745d6e7c73c1713ba35982593ae81b514c1f7c707cf58ac244bea057df9\n\nSSDEEP: 6.JyXSVVG/FTVmJIOFJbIvstXbPAbhYNraUr5aK+d9osv.cXaVWImJIOFJB0tLov\n\nTipo: PE32 executable (GUI) Intel 80386, for MS Windows\n\nMIME: application/vnd.microsoft.portable-executable\n\nUbicaci\u00f3n: Descargado mediante acceso directo malicioso\n\nComportamiento: Ejecutado como proceso hijo de explorer.exe",
+            "valid_from": "2025-07-04T17:45:32.330Z",
+            "valid_until": "2026-04-05T15:05:04.165Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Software",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "4b4e5745d6e7c73c1713ba35982593ae81b514c1f7c707cf58ac244bea057df9"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "389cfc5b-4959-4730-9cc2-f723f1c29c92",
+            "x_opencti_type": "Indicator",
+            "type": "indicator",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "id": "indicator--662c30b7-8199-5161-85da-5fab3579b12d",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 100,
+            "created": "2025-07-04T17:08:26.010Z",
+            "modified": "2025-07-15T20:51:44.973Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = 'CE7792FF95DCA6CD5806083ACEFC42D131AAE24000A4FC1C67DA24F083DA9C6A']",
+            "name": "build.exe",
+            "indicator_types": [
+                "anomalous-activity"
+            ],
+            "valid_from": "2024-11-29T05:00:00.000Z",
+            "valid_until": "2025-08-31T02:19:31.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Software",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "CE7792FF95DCA6CD5806083ACEFC42D131AAE24000A4FC1C67DA24F083DA9C6A"
+                        }
+                    ]
+                }
+            ],
+            "x_mitre_platforms": [
+                "linux",
+                "windows"
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "b46b669d-065a-44e1-aaf9-5cb458cc02cd",
+            "x_opencti_type": "Indicator",
+            "type": "indicator",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "id": "indicator--387ac8a0-8326-5a7b-bd9c-98ca9cc0c838",
+            "spec_version": "2.1",
+            "revoked": true,
+            "confidence": 50,
+            "created": "2024-10-08T00:00:00.000Z",
+            "modified": "2025-07-15T20:36:16.397Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = 'd41fbae00f709b0243d8420707a5d87d45eec903ad2fda40a03963b958f83a18' AND file:hashes.MD5 = '34ee6bbd2c0578e18dd75c52678b81ce']",
+            "name": "UnknownPE NewDropper 2025",
+            "description": "Archivo malicioso asociado a trojan",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "valid_from": "2024-10-08T00:00:00.000Z",
+            "valid_until": "2025-07-09T21:19:31.835Z",
+            "x_opencti_score": 20,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "d41fbae00f709b0243d8420707a5d87d45eec903ad2fda40a03963b958f83a18"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "MD5",
+                            "hash": "34ee6bbd2c0578e18dd75c52678b81ce"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "df5aaaf3-a1c3-4ae8-be15-c800a9dcd4d3",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--be859253-6b80-5bb7-ab36-fb4f9146005c",
+            "spec_version": "2.1",
+            "revoked": true,
+            "confidence": 50,
+            "created": "2024-10-04T00:00:00.000Z",
+            "modified": "2025-07-16T19:58:52.190Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = 'd9d075a306a860be30f95fd450679d99407354da371d159873fa38a14eacde5b' AND file:hashes.MD5 = '99d634350e3e891a20846ff50233c687']",
+            "name": "Unknown_Trojan_Dropper_2024_d9d075a3.exe",
+            "description": "Archivo malicioso asociado a trojan",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "valid_from": "2024-10-04T00:00:00.000Z",
+            "valid_until": "2025-07-05T21:19:31.835Z",
+            "x_opencti_score": 20,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "d9d075a306a860be30f95fd450679d99407354da371d159873fa38a14eacde5b"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "MD5",
+                            "hash": "99d634350e3e891a20846ff50233c687"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "8459eacb-d04d-45fd-a8ec-df975cd4ccf0",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--349943ec-9bbe-5ef8-a05f-a99ed62cfe08",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 50,
+            "created": "2024-11-13T00:00:00.000Z",
+            "modified": "2025-07-15T20:35:30.288Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = 'ec37ee5f6b5d6ffa748775c70f3c3519ddcd4bbf7971f20fa9756549593c8d0d']",
+            "name": "UnknownPE GenericDropper 2025",
+            "description": "Malware: downloader.msil/ratx",
+            "valid_from": "2024-11-13T00:00:00.000Z",
+            "valid_until": "2025-08-14T21:19:31.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "ec37ee5f6b5d6ffa748775c70f3c3519ddcd4bbf7971f20fa9756549593c8d0d"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "e9c8ed0e-cd5a-4fc1-9303-7d04d4aaf2dd",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--08432d35-6956-5d78-8726-6c7a4158557d",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 50,
+            "created": "2024-10-31T00:00:00.000Z",
+            "modified": "2025-07-15T20:24:26.964Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = '80c7fbdfac756d60ce06b1c223c174ba13abd78eb01aac38b37c0b812ece3aa5']",
+            "name": "Phishing Legal Dropper 2024",
+            "description": "Malware: trojan.babar/filerepmalware",
+            "valid_from": "2024-10-31T00:00:00.000Z",
+            "valid_until": "2025-08-01T21:19:31.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "80c7fbdfac756d60ce06b1c223c174ba13abd78eb01aac38b37c0b812ece3aa5"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "c62cd604-4e66-4ff0-a9da-290ce5e306c1",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--32b8c254-55f4-54da-ab62-561d313333b6",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 50,
+            "created": "2024-11-22T00:00:00.000Z",
+            "modified": "2025-07-15T20:34:05.052Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = '7fa10347d61c120f616d7947f94f74f5e9da2a9f056d6b2e9bffa28484f7690c']",
+            "name": "UnknownPE GenericDropper 2025",
+            "description": "Malware: trojan.ratx/remcos",
+            "valid_from": "2024-11-22T00:00:00.000Z",
+            "valid_until": "2025-08-23T21:19:31.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "7fa10347d61c120f616d7947f94f74f5e9da2a9f056d6b2e9bffa28484f7690c"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "169c18b9-f34c-40be-bcd3-4f0d6a4dcaa2",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--08084715-2eb0-572b-bc3c-e469616708a7",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 50,
+            "created": "2024-11-07T00:00:00.000Z",
+            "modified": "2025-07-15T20:24:15.702Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = 'd0e1e79266c3e2428e10998efa4e55b571f7c21a02dfd18c6bfb560d1db919b6']",
+            "name": "Phishing Executable Radicado 2024",
+            "description": "Malware: trojan.remcos/ypxnb",
+            "valid_from": "2024-11-07T00:00:00.000Z",
+            "valid_until": "2025-08-08T21:19:31.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "d0e1e79266c3e2428e10998efa4e55b571f7c21a02dfd18c6bfb560d1db919b6"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "14a5c2f8-90eb-4062-aa10-cf644c2c64f2",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--d2d2d31c-4243-5c10-bce9-f32ba3c8dd3d",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 50,
+            "created": "2024-10-29T00:00:00.000Z",
+            "modified": "2025-07-16T20:04:59.428Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = '3f1c7adf6a76d7c313bf833ce9d41cd09ad28ece399d56e25a0561d30225c17f']",
+            "name": "DOCS_CONTROL_COBRO_PROCESO_LEGAL_9874521954120984162.exe",
+            "description": "Malware: trojan.msil/agenttesla",
+            "valid_from": "2024-10-29T00:00:00.000Z",
+            "valid_until": "2025-07-30T21:19:31.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "3f1c7adf6a76d7c313bf833ce9d41cd09ad28ece399d56e25a0561d30225c17f"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "fcf1fa27-e777-4cd3-88be-ba876af1e273",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--e160aa57-87ee-520a-88c1-01f2d4d615d0",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 50,
+            "created": "2024-10-28T00:00:00.000Z",
+            "modified": "2025-07-16T20:12:19.165Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = '495897a0e9d55bbd06884df889b7c15d9c39be82553bd7a235cbfb7075d4b99e']",
+            "name": "Radicado_Legal.N\u00b093883.exe",
+            "description": "Malware: trojan.filerepmalware",
+            "valid_from": "2024-10-28T00:00:00.000Z",
+            "valid_until": "2025-07-29T21:19:31.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "495897a0e9d55bbd06884df889b7c15d9c39be82553bd7a235cbfb7075d4b99e"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "62e1c958-2786-43d2-a67d-1efbe8ae31cc",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--006c7822-17e3-5e2e-befb-151040dbd05e",
+            "spec_version": "2.1",
+            "revoked": true,
+            "confidence": 50,
+            "created": "2024-10-11T00:00:00.000Z",
+            "modified": "2025-07-15T20:24:04.835Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = 'ff4a80e4e90fd047718103af527a20a452f76fdbd2c18de9696f72c2ab4926c6']",
+            "name": "Radicado Legal Falso Impersonation 2024",
+            "description": "Malware: trojan.generickds",
+            "valid_from": "2024-10-11T00:00:00.000Z",
+            "valid_until": "2025-07-12T21:19:31.835Z",
+            "x_opencti_score": 20,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "ff4a80e4e90fd047718103af527a20a452f76fdbd2c18de9696f72c2ab4926c6"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "a456d552-7c34-4fb7-90e5-4efe8e53ba8e",
+            "x_opencti_type": "Indicator",
+            "type": "indicator",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "id": "indicator--ed9774d9-646f-5bc3-a6f7-5a2d4482913d",
+            "spec_version": "2.1",
+            "revoked": true,
+            "confidence": 50,
+            "created": "2024-10-11T00:00:00.000Z",
+            "modified": "2025-07-16T20:20:12.002Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = '4d37f7aea76ccb768710e703abd2553964142ab35115abf0768f338286400352']",
+            "name": "TRANSFERENCIA ACH NO 987685745658790976587465789.exe",
+            "description": "Malware: trojan.filerepmalware/hcpn",
+            "valid_from": "2024-10-11T00:00:00.000Z",
+            "valid_until": "2025-07-12T21:19:31.835Z",
+            "x_opencti_score": 20,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "4d37f7aea76ccb768710e703abd2553964142ab35115abf0768f338286400352"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "4940f90f-8f59-4b2a-b061-7dcc7a17988b",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--762d10c7-9e7e-5376-835b-a460967b08f3",
+            "spec_version": "2.1",
+            "revoked": true,
+            "confidence": 50,
+            "created": "2024-10-04T00:00:00.000Z",
+            "modified": "2025-07-16T17:20:11.259Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = 'd9d075a306a860be30f95fd450679d99407354da371d159873fa38a14eacde5b']",
+            "name": "An\u00e1lisis din\u00e1mico en sandbox",
+            "description": "Malware: trojan",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "valid_from": "2024-10-04T00:00:00.000Z",
+            "valid_until": "2025-07-05T21:19:31.835Z",
+            "x_opencti_score": 20,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "d9d075a306a860be30f95fd450679d99407354da371d159873fa38a14eacde5b"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "e60eb65b-f2c9-4d56-80d2-b926a082b3b8",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--80ac9c79-c8d0-5865-8ae4-17f1d8dd8bd1",
+            "spec_version": "2.1",
+            "revoked": true,
+            "confidence": 50,
+            "created": "2024-10-08T00:00:00.000Z",
+            "modified": "2025-07-16T17:31:53.392Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = 'd41fbae00f709b0243d8420707a5d87d45eec903ad2fda40a03963b958f83a18']",
+            "name": "JavaScript\u2011a\u2011PowerShell",
+            "description": "Malware: trojan",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "valid_from": "2024-10-08T00:00:00.000Z",
+            "valid_until": "2025-07-09T21:19:31.835Z",
+            "x_opencti_score": 20,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "d41fbae00f709b0243d8420707a5d87d45eec903ad2fda40a03963b958f83a18"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "daec3018-bfe3-479c-919a-555b4847b069",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--8fffe92e-04c2-5e7e-85e1-88e8e4912f9e",
+            "spec_version": "2.1",
+            "revoked": true,
+            "confidence": 50,
+            "created": "2024-09-12T00:00:00.000Z",
+            "modified": "2025-07-16T17:48:29.701Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA1' = '6C312B0F689B144451C3EEC49D68D4DA30E17218']",
+            "name": "trojan.filerepmalware/misc",
+            "description": "Hash del archivo \u00abDOCUMENTOS\u00a0Y\u00a0ANEXOS\u00a0\u2026\u00a089.exe\u00bb.",
+            "indicator_types": [
+                "file-hash-watchlist"
+            ],
+            "valid_from": "2024-09-12T00:00:00.000Z",
+            "valid_until": "2025-06-13T21:19:31.835Z",
+            "x_opencti_score": 20,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA1",
+                            "hash": "6C312B0F689B144451C3EEC49D68D4DA30E17218"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "0178e560-32a2-44f5-8ee5-504223afd407",
+            "x_opencti_type": "Indicator",
+            "type": "indicator",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "id": "indicator--bb650489-d760-58e1-a59b-27b5c55ae318",
+            "spec_version": "2.1",
+            "revoked": true,
+            "confidence": 50,
+            "created": "2024-09-12T00:00:00.000Z",
+            "modified": "2025-07-16T19:56:41.575Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA256' = 'AE2D51F8430D85F56521E2445D8801E6413DDF1A24685AC5AA3CA84DDAABC425']",
+            "name": "trojan.babar/androm",
+            "description": "Hash del archivo \u00abARCHIVO\u00a0TRANSACCIONAL\u00a0\u2026\u00a0.exe\u00bb.",
+            "indicator_types": [
+                "file-hash-watchlist"
+            ],
+            "valid_from": "2024-09-12T00:00:00.000Z",
+            "valid_until": "2025-06-13T21:19:31.835Z",
+            "x_opencti_score": 20,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA256",
+                            "hash": "AE2D51F8430D85F56521E2445D8801E6413DDF1A24685AC5AA3CA84DDAABC425"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "55f1fcb5-7d24-4a2e-b1e5-941eb4d85da6",
+            "x_opencti_type": "Indicator",
+            "type": "indicator",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "id": "indicator--22690543-a023-5568-8a6d-817ec75d08ce",
+            "spec_version": "2.1",
+            "revoked": true,
+            "confidence": 50,
+            "created": "2024-09-10T00:00:00.000Z",
+            "modified": "2025-07-15T20:25:18.013Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA256' = '0E995312276107AB21BE64E93A25616EF54832B3FC45E3478099023E3810017C']",
+            "name": "Malicious EXE Generic Dropper 2025",
+            "description": "Hash del archivo \u00abRADICADO\u00a02021-00293\u00a0\u2026\u00a0.exe\u00bb.",
+            "indicator_types": [
+                "file-hash-watchlist"
+            ],
+            "valid_from": "2024-09-10T00:00:00.000Z",
+            "valid_until": "2025-06-11T21:19:31.835Z",
+            "x_opencti_score": 20,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA256",
+                            "hash": "0E995312276107AB21BE64E93A25616EF54832B3FC45E3478099023E3810017C"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "f24f25eb-018c-4bfa-b925-b8a3a6551a6f",
+            "x_opencti_type": "Indicator",
+            "type": "indicator",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "id": "indicator--6aabfa74-9d08-5d17-999d-6d68b51e5912",
+            "spec_version": "2.1",
+            "revoked": true,
+            "confidence": 80,
+            "created": "2024-08-26T00:00:00.000Z",
+            "modified": "2025-07-16T16:54:49.076Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA256' = '4DF31CAB3C799C3713A6886B1F5E114DA9D67DEE68B5A35E2B125367417C8246']",
+            "name": "Remcos (out_sig.exe)",
+            "description": "Hash SHA256 asociado a variante de Remcos.",
+            "indicator_types": [
+                "file-hash-watchlist"
+            ],
+            "valid_from": "2024-08-26T00:00:00.000Z",
+            "valid_until": "2025-05-27T21:19:31.835Z",
+            "x_opencti_score": 20,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA256",
+                            "hash": "4DF31CAB3C799C3713A6886B1F5E114DA9D67DEE68B5A35E2B125367417C8246"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "cbf9284d-f06e-4cf1-a7e2-068b4b835f92",
+            "x_opencti_type": "Indicator",
+            "type": "indicator",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "id": "indicator--8f0774b8-b7f6-51b9-9bde-19426156a5c6",
+            "spec_version": "2.1",
+            "revoked": true,
+            "confidence": 50,
+            "created": "2024-08-26T00:00:00.000Z",
+            "modified": "2025-07-16T17:47:20.563Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-1' = 'D185030089248234C9E83AD9216B3B8F7890167A' AND file:hashes.'SHA-256' = 'CB8D0BA3CB1D8F9222E80075CBF88DD05008557F68D8CDA67CE44258A1D2FD52' AND file:name = 'out_sig.exe']",
+            "name": "out_sig.exe",
+            "valid_from": "2024-08-26T00:00:00.000Z",
+            "valid_until": "2025-05-27T21:19:31.835Z",
+            "x_opencti_score": 20,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-1",
+                            "hash": "D185030089248234C9E83AD9216B3B8F7890167A"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "CB8D0BA3CB1D8F9222E80075CBF88DD05008557F68D8CDA67CE44258A1D2FD52"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": null
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "7792d3f0-ce43-4ae8-92de-19b45247ca01",
+            "x_opencti_type": "Indicator",
+            "type": "indicator",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "id": "indicator--b5c15756-c288-57c3-b6a6-72d08f260eeb",
+            "spec_version": "2.1",
+            "revoked": true,
+            "confidence": 50,
+            "created": "2024-08-15T00:00:00.000Z",
+            "modified": "2025-07-16T19:55:22.849Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'MD5' = 'E7A5C6AFF6F821503A9680AD9FD80E64' AND file:hashes.'SHA-1' = 'A9A13CD3416686EE337D23C36D41713EAB15978E' AND file:hashes.'SHA-256' = '9864ADFDF839D6EBC68EDB6C128F0E5B6EE54DD82283723BB6276ED24176F065']",
+            "name": "Phishing_DOCS_GranadaMeta_Androm_20240815.exe",
+            "valid_from": "2024-08-15T00:00:00.000Z",
+            "valid_until": "2025-05-16T21:19:31.835Z",
+            "x_opencti_score": 20,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "MD5",
+                            "hash": "E7A5C6AFF6F821503A9680AD9FD80E64"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-1",
+                            "hash": "A9A13CD3416686EE337D23C36D41713EAB15978E"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "9864ADFDF839D6EBC68EDB6C128F0E5B6EE54DD82283723BB6276ED24176F065"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "0b34fb4d-4da3-431c-ba51-d3154be9afda",
+            "x_opencti_type": "Indicator",
+            "type": "indicator",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "id": "indicator--c4130e65-970b-5ef2-abe0-b8c5bbdb4210",
+            "spec_version": "2.1",
+            "revoked": true,
+            "confidence": 50,
+            "created": "2024-08-15T00:00:00.000Z",
+            "modified": "2025-07-16T20:00:17.893Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-1' = 'A425273D901F58227DD634C110D30E9015AC5081' AND file:hashes.'SHA-256' = 'BDDC9C0E9743073C1580664512E8A5E9DC63515E451DB089889E9566CFF21355']",
+            "name": "Unknown_Trojan_Payload_2025_BDDC9C0E.exe",
+            "valid_from": "2024-08-15T00:00:00.000Z",
+            "valid_until": "2025-05-16T21:19:31.835Z",
+            "x_opencti_score": 20,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-1",
+                            "hash": "A425273D901F58227DD634C110D30E9015AC5081"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "BDDC9C0E9743073C1580664512E8A5E9DC63515E451DB089889E9566CFF21355"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "31e175cb-3ab6-40fc-a844-a0455c92f7c3",
+            "x_opencti_type": "Indicator",
+            "type": "indicator",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "id": "indicator--f79581b7-ec57-52f9-a994-7631d84b5ef5",
+            "spec_version": "2.1",
+            "revoked": true,
+            "confidence": 50,
+            "created": "2024-08-26T00:00:00.000Z",
+            "modified": "2025-07-16T20:29:36.246Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'MD5' = 'A2F672AA8F20F69A981C24C4AC9F7A34' AND file:hashes.'SHA-1' = '2AFC0F87C56665A55CA318C795E7035C1A525C9E' AND file:hashes.'SHA-256' = '4DF31CAB3C799C3713A6886B1F5E114DA9D67DEE68B5A35E2B125367417C8246' AND file:name = 'out_sig.exe']",
+            "name": "Remcos RAT (con capacidad de keylogger)",
+            "valid_from": "2024-08-26T00:00:00.000Z",
+            "valid_until": "2025-05-27T21:19:31.835Z",
+            "x_opencti_score": 20,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "MD5",
+                            "hash": "A2F672AA8F20F69A981C24C4AC9F7A34"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-1",
+                            "hash": "2AFC0F87C56665A55CA318C795E7035C1A525C9E"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "4DF31CAB3C799C3713A6886B1F5E114DA9D67DEE68B5A35E2B125367417C8246"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": null
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "06c6733d-1aa5-4e86-926b-8a89cbe28ac4",
+            "x_opencti_type": "Indicator",
+            "type": "indicator",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "id": "indicator--65ea55bb-f3ae-54f2-94d3-745f15a38ac5",
+            "spec_version": "2.1",
+            "revoked": true,
+            "confidence": 100,
+            "created": "2025-06-26T17:16:59.653Z",
+            "modified": "2025-07-15T20:51:06.184Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = 'AEFA4268E94789BE87899823842DA81649D52913FC377E8A12399F09ABD3F3E6']",
+            "name": "Trojan:Win32/Sonbokli.A!cl",
+            "valid_from": "2024-07-24T00:00:00.000Z",
+            "valid_until": "2025-04-24T21:19:31.835Z",
+            "x_opencti_score": 20,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "AEFA4268E94789BE87899823842DA81649D52913FC377E8A12399F09ABD3F3E6"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "d852afe5-6623-4fe8-84f5-5696818de624",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--a3d6ab43-e719-56aa-8ac4-6ed20df6eb89",
+            "spec_version": "2.1",
+            "revoked": true,
+            "confidence": 100,
+            "created": "2025-06-26T17:16:59.632Z",
+            "modified": "2025-07-16T19:40:32.631Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = '932F92403AB63909DA49EA1A182C3B35C53625908855CB0E333BA86AC831BBC4']",
+            "name": "Trojan.MSIL",
+            "valid_from": "2024-07-24T00:00:00.000Z",
+            "valid_until": "2025-04-24T21:19:31.835Z",
+            "x_opencti_score": 20,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "932F92403AB63909DA49EA1A182C3B35C53625908855CB0E333BA86AC831BBC4"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "90e6a69d-6630-4fe5-92cd-03fcea81bf9a",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--e74036e5-c602-57b4-b8fa-e6599cdb7ab3",
+            "spec_version": "2.1",
+            "revoked": true,
+            "confidence": 100,
+            "created": "2025-06-26T17:16:59.562Z",
+            "modified": "2025-07-16T20:13:44.352Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = '879BBC7BF6A4C78BB4977CEE006D0796F8A39C69B6C7A3F8624F9D030EAAF437']",
+            "name": "Trojan.Androm/MSIL",
+            "valid_from": "2024-07-16T00:00:00.000Z",
+            "valid_until": "2025-04-16T21:19:31.835Z",
+            "x_opencti_score": 20,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "879BBC7BF6A4C78BB4977CEE006D0796F8A39C69B6C7A3F8624F9D030EAAF437"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "c86679fc-f81f-4ead-8bf8-229047cbca2b",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--edd917d0-d37f-52c3-8f67-c03d4209c0cb",
+            "spec_version": "2.1",
+            "revoked": true,
+            "confidence": 100,
+            "created": "2025-06-26T17:03:51.165Z",
+            "modified": "2025-07-16T20:19:55.677Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = 'EEA6212600D6BE58FA3514670FD0E697FA13BC894EF3F2D9D245453898BADEC9']",
+            "name": "Trojan.Loader - COMUNICA ACTUACION SHA256",
+            "valid_from": "2024-06-26T00:00:00.000Z",
+            "valid_until": "2025-03-27T21:19:31.835Z",
+            "x_opencti_score": 20,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "EEA6212600D6BE58FA3514670FD0E697FA13BC894EF3F2D9D245453898BADEC9"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "18b5e6b9-213c-4fea-806e-c3fc8aef42bb",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--2415f296-e22b-57ab-a44f-53bdae6f7361",
+            "spec_version": "2.1",
+            "revoked": true,
+            "confidence": 100,
+            "created": "2025-06-26T16:52:09.364Z",
+            "modified": "2025-07-15T20:25:49.895Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = '8A252E03D74753F00DEB6E3505E3FDC528CB04C140E35AFDAE2CE23550EF1F61']",
+            "name": "Remcos RAT executable",
+            "valid_from": "2024-05-27T00:00:00.000Z",
+            "valid_until": "2025-02-25T21:19:31.835Z",
+            "x_opencti_score": 20,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "8A252E03D74753F00DEB6E3505E3FDC528CB04C140E35AFDAE2CE23550EF1F61"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "020a039d-166a-48bd-a425-4e362aeac77a",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--6a61ac10-c4dc-55b1-9fd0-793dcd852461",
+            "spec_version": "2.1",
+            "revoked": true,
+            "confidence": 100,
+            "created": "2025-06-26T16:52:09.364Z",
+            "modified": "2025-07-15T20:53:47.537Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = 'b41a94ac0018a46696e2461cd828adb5f2d0caffc05618c9044a2491946600cc']",
+            "name": "AidetectMalware executable",
+            "valid_from": "2024-05-30T00:00:00.000Z",
+            "valid_until": "2025-02-28T21:19:31.835Z",
+            "x_opencti_score": 20,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "b41a94ac0018a46696e2461cd828adb5f2d0caffc05618c9044a2491946600cc"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "ef618202-9fab-4216-a1ae-92dcd35307d2",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--266ba2ac-31b4-502d-b45f-991fa36ec07b",
+            "spec_version": "2.1",
+            "revoked": true,
+            "confidence": 100,
+            "created": "2025-06-26T16:48:11.411Z",
+            "modified": "2025-07-15T20:28:53.839Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = 'F19823392F32DE8C24269183F3E8B626037BC507D79612D6004628E98EEC7C74']",
+            "name": "Trojan.Loader",
+            "valid_from": "2024-06-21T00:00:00.000Z",
+            "valid_until": "2025-03-22T21:19:31.835Z",
+            "x_opencti_score": 20,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "F19823392F32DE8C24269183F3E8B626037BC507D79612D6004628E98EEC7C74"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "f3a873a8-5b78-4479-9c3d-4b2e8e5ff285",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--76fb06b2-db8e-56f4-abbb-27abd8e4700a",
+            "spec_version": "2.1",
+            "revoked": true,
+            "confidence": 100,
+            "created": "2025-06-26T16:48:11.406Z",
+            "modified": "2025-07-16T17:21:22.494Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = 'D0013BE890E9642E8301222526792678C6C70F859C303EDC5A30D64A647D96C3']",
+            "name": "Trojan.MSIL.Blocker",
+            "valid_from": "2024-06-13T00:00:00.000Z",
+            "valid_until": "2025-03-14T21:19:31.835Z",
+            "x_opencti_score": 20,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "D0013BE890E9642E8301222526792678C6C70F859C303EDC5A30D64A647D96C3"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "44fdb1e0-6390-4312-bbc5-62fbeebeb1c7",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--2591e3ec-321b-52f5-8689-2f8cb76fa10c",
+            "spec_version": "2.1",
+            "revoked": true,
+            "confidence": 100,
+            "created": "2025-06-26T16:48:11.380Z",
+            "modified": "2025-07-15T20:28:07.935Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = 'd87b9a3357debfa65a4fffc7db078a5d2dbfccad834080f507e32af551057b07']",
+            "name": "AlDetectMalware executable",
+            "valid_from": "2024-05-30T00:00:00.000Z",
+            "valid_until": "2025-02-28T21:19:31.835Z",
+            "x_opencti_score": 20,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "d87b9a3357debfa65a4fffc7db078a5d2dbfccad834080f507e32af551057b07"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "aeeba8e8-efa3-47fc-8e58-986bdfef1e19",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--295bfb33-4f39-5fc0-bdad-e0c538c9d103",
+            "spec_version": "2.1",
+            "revoked": true,
+            "confidence": 100,
+            "created": "2025-06-25T17:34:11.105Z",
+            "modified": "2025-07-15T20:29:44.368Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'MD5' = '4882b39cbbfdb87fe32da4edb86a93f2' AND file:hashes.'SHA-1' = '0bf9eee248df01a5d3ab794b0298a435c1516bfa' AND file:hashes.'SHA-256' = 'd2db2ce86fbf3b55e42cda816c500f7843f3ba02a8564e030b9305ef96716e2d']",
+            "name": "Archivo malicioso - wallpaper32.exe",
+            "description": "Archivo asociado a campa\u00f1a de phishing detectado por CSIRT UNAD. Malware: trojan.lazy/remcos.",
+            "valid_from": "2024-03-24T17:26:00.000Z",
+            "valid_until": "2024-12-24T14:45:31.835Z",
+            "x_opencti_score": 20,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "MD5",
+                            "hash": "4882b39cbbfdb87fe32da4edb86a93f2"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-1",
+                            "hash": "0bf9eee248df01a5d3ab794b0298a435c1516bfa"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "d2db2ce86fbf3b55e42cda816c500f7843f3ba02a8564e030b9305ef96716e2d"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "846967c5-bbe4-44da-9dfd-c2adb0b07aa2",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--a04d67ad-c45c-53b4-b717-2d7811bda578",
+            "spec_version": "2.1",
+            "revoked": true,
+            "confidence": 100,
+            "created": "2025-06-25T17:34:11.038Z",
+            "modified": "2025-07-16T19:40:17.682Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'MD5' = 'ae224c5e196ff381836c9e95deebb7d5' AND file:hashes.'SHA-1' = '910446a2a0f4e53307b6fdeb1a3e236c929e2ef4' AND file:hashes.'SHA-256' = 'bf933ccf86c55fc328e343b55dbf2e8ebd528e8a0a54f8f659cd0d4b4f261f26']",
+            "name": "Archivo malicioso - 001-NOTIFICACION JUDICIAL.exe",
+            "description": "Archivo asociado a campa\u00f1a de phishing detectado por CSIRT UNAD. Malware: trojan.gvff.",
+            "valid_from": "2024-04-18T18:00:30.000Z",
+            "valid_until": "2025-01-18T15:20:01.835Z",
+            "x_opencti_score": 20,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "MD5",
+                            "hash": "ae224c5e196ff381836c9e95deebb7d5"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-1",
+                            "hash": "910446a2a0f4e53307b6fdeb1a3e236c929e2ef4"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "bf933ccf86c55fc328e343b55dbf2e8ebd528e8a0a54f8f659cd0d4b4f261f26"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "b8a09164-ea9a-46dc-ba62-6bd1d81c0f67",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--9b8be5d2-cb17-539c-bc26-4b9709ea6ecd",
+            "spec_version": "2.1",
+            "revoked": true,
+            "confidence": 100,
+            "created": "2025-06-25T17:34:11.033Z",
+            "modified": "2025-07-16T19:39:43.182Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'MD5' = 'A2D70FBAB5181A509369D96B682FC641' AND file:hashes.'SHA-1' = '22AFCDC180400C4D2B9E5A6DB2B8A26BFF54DD38' AND file:hashes.'SHA-256' = '3EC3A0A4A46D34DA0867CFD2DD6C93C95134367C92E4A3274857415B79453919']",
+            "name": "Archivo malicioso - 01 DEMANDA LABORAL.EXE",
+            "description": "Archivo asociado a campa\u00f1a de phishing detectado por CSIRT UNAD. Malware: Program.Unwanted.5065.",
+            "valid_from": "2024-04-18T17:20:45.000Z",
+            "valid_until": "2025-01-18T14:40:16.835Z",
+            "x_opencti_score": 20,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "MD5",
+                            "hash": "A2D70FBAB5181A509369D96B682FC641"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-1",
+                            "hash": "22AFCDC180400C4D2B9E5A6DB2B8A26BFF54DD38"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "3EC3A0A4A46D34DA0867CFD2DD6C93C95134367C92E4A3274857415B79453919"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "8e7b990f-008b-4647-80a8-4988a3ea454e",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--ab56bb75-b122-5b9d-bf33-84a106406f7f",
+            "spec_version": "2.1",
+            "revoked": true,
+            "confidence": 100,
+            "created": "2025-06-25T17:34:10.934Z",
+            "modified": "2025-07-16T19:51:14.592Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'MD5' = 'A971EE83FD5AB858FDF78C12A58CE10A' AND file:hashes.'SHA-1' = 'F93CA19E48410B0AB7FFD23B3797EAE54F3B8CC5' AND file:hashes.'SHA-256' = '3EC3A0A4A46D34DA0867CFD2DD6C93C95134367C92E4A3274857415B79453919']",
+            "name": "Archivo malicioso - REF No 372105 REVI VALI ABRIL 9 DEL 2024.exe",
+            "description": "Archivo asociado a campa\u00f1a de phishing detectado por CSIRT UNAD. Malware: trojan.gvff.",
+            "valid_from": "2024-04-15T14:50:32.000Z",
+            "valid_until": "2025-01-15T12:10:03.835Z",
+            "x_opencti_score": 20,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "MD5",
+                            "hash": "A971EE83FD5AB858FDF78C12A58CE10A"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-1",
+                            "hash": "F93CA19E48410B0AB7FFD23B3797EAE54F3B8CC5"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "3EC3A0A4A46D34DA0867CFD2DD6C93C95134367C92E4A3274857415B79453919"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "9796120e-0cee-43be-9b60-121cd98cbc71",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--45875964-9080-5a8c-9236-a624b022b19c",
+            "spec_version": "2.1",
+            "revoked": true,
+            "confidence": 100,
+            "created": "2025-06-25T17:29:56.171Z",
+            "modified": "2025-07-15T20:40:05.361Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'MD5' = 'fe61d7fd96c0b248f5dc3c2e1df20141' AND file:hashes.'SHA-1' = '6f51ab8128c2c8279798dfba875da0d945343b88' AND file:hashes.'SHA-256' = '584c8cdfd5fb8a8534454ce24c6b794a577c45a7740b7da6bd20fc6a5de1e566']",
+            "name": "Archivo malicioso - DIAN",
+            "description": "Archivo RAR sospechoso con VBScript malicioso identificado como HEUR.Arch.Script.A",
+            "valid_from": "2023-10-20T16:53:00.000Z",
+            "valid_until": "2025-02-01T16:53:00.000Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "MD5",
+                            "hash": "fe61d7fd96c0b248f5dc3c2e1df20141"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-1",
+                            "hash": "6f51ab8128c2c8279798dfba875da0d945343b88"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "584c8cdfd5fb8a8534454ce24c6b794a577c45a7740b7da6bd20fc6a5de1e566"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "65f4c855-3ce2-45f5-99f0-44c626b6ce1f",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--ec8f2106-f292-5e16-b3c2-544884f9452b",
+            "spec_version": "2.1",
+            "revoked": true,
+            "confidence": 100,
+            "created": "2025-06-25T17:23:47.011Z",
+            "modified": "2025-07-16T20:15:25.174Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'MD5' = '96aeb38d65c178166d089d70f189e5f7' AND file:hashes.'SHA-1' = '3b5fd38214eae326030c52220e1b0d1d6d0c04d3' AND file:hashes.'SHA-256' = '2c9e35a02103f6cd2a73b166ac0ec2bf7e1c39b9f7c046e3e6bb2e13be6bb981']",
+            "name": "Archivo malicioso - NOTIFICACION DEMANDA.EXE",
+            "description": "Ejecutable PE32 identificado con comportamiento sospechoso. Relacionado con AsyncRAT. Campa\u00f1a de phishing.",
+            "valid_from": "2023-10-11T22:28:15.000Z",
+            "valid_until": "2025-01-23T22:28:15.000Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "MD5",
+                            "hash": "96aeb38d65c178166d089d70f189e5f7"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-1",
+                            "hash": "3b5fd38214eae326030c52220e1b0d1d6d0c04d3"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "2c9e35a02103f6cd2a73b166ac0ec2bf7e1c39b9f7c046e3e6bb2e13be6bb981"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "f292bdbe-c7ee-46e2-af54-a0303fc007f1",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--b3d7d076-fd92-5697-be16-c25b38768a33",
+            "spec_version": "2.1",
+            "revoked": true,
+            "confidence": 100,
+            "created": "2025-06-25T17:23:46.915Z",
+            "modified": "2025-07-16T19:53:08.094Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'MD5' = 'FD15BD1D98F5C1DB21833DD27638EE36' AND file:hashes.'SHA-1' = '1269779FD5326823EEE6325A1AED0F2E9BAA8FDB' AND file:hashes.'SHA-256' = 'D9AEAE3C8426737323DD915F6327B8A89CF17931FD26F124D22E9E814D1CD181']",
+            "name": "Archivo malicioso - REMITIR\u00c1 A TRAV\u00c9S DEL SERVICIO POSTAL AUTORIZADO.7z.rEv",
+            "description": "Archivo 7z con script VBScript que ejecuta tareas maliciosas. Detectado en campa\u00f1a de phishing. CSIRT UNAD.",
+            "valid_from": "2023-10-11T21:15:00.000Z",
+            "valid_until": "2025-01-23T21:15:00.000Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "MD5",
+                            "hash": "FD15BD1D98F5C1DB21833DD27638EE36"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-1",
+                            "hash": "1269779FD5326823EEE6325A1AED0F2E9BAA8FDB"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "D9AEAE3C8426737323DD915F6327B8A89CF17931FD26F124D22E9E814D1CD181"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "98390f24-82f6-4915-84db-e833c1b43666",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--2782a809-d226-5fed-b113-e326e734598b",
+            "spec_version": "2.1",
+            "revoked": true,
+            "confidence": 100,
+            "created": "2025-06-25T17:21:19.203Z",
+            "modified": "2025-07-15T20:29:28.107Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'MD5' = '2AB95246241013F7D9943927CCBA8BAF' AND file:hashes.'SHA-1' = 'B560E98DF433430CB0752A5AA4B49435DC5DE22D' AND file:hashes.'SHA-256' = '4BF5E6608AD90C11B9C8E6346FA9081511575A1187FDEC5DBFCC3F6DB1944E0C']",
+            "name": "archivo malicioso campa\u00f1a de phishing",
+            "description": "Ejecutable PE32 asociado a campa\u00f1a de phishing. Nombre: CITACION No 2158952 DEL 6 DE SEPTIEMBRE DEL 2023.exe. Reportado por CSIRT UNAD.",
+            "valid_from": "2023-09-07T15:00:00.000Z",
+            "valid_until": "2024-12-20T15:00:00.000Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "MD5",
+                            "hash": "2AB95246241013F7D9943927CCBA8BAF"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-1",
+                            "hash": "B560E98DF433430CB0752A5AA4B49435DC5DE22D"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "4BF5E6608AD90C11B9C8E6346FA9081511575A1187FDEC5DBFCC3F6DB1944E0C"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "146c8b3b-cfdd-4e66-9dd4-aca0c5ad5c25",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--dba45ecd-17d0-5b84-a6db-0f3a54cbf1bf",
+            "spec_version": "2.1",
+            "revoked": true,
+            "confidence": 100,
+            "created": "2025-06-25T16:53:41.980Z",
+            "modified": "2025-07-16T20:10:06.581Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'MD5' = 'C151A88935F7050C43D29C9CF9DD30FF' AND file:hashes.'SHA-1' = 'FCC475CB628A6FFD42F8B27E4DA8F43B6F18383F' AND file:hashes.'SHA-256' = '2CFA617322BF08D1C0E7F988C6E532DED2DEF6509EA79063962D555CA035984F']",
+            "name": "Indicador archivo malicioso VBS - IMAGENES_FOTO_MULTAS-PNG",
+            "description": "Archivo VBS malicioso dentro de archivo RAR detectado en ataque de phishing. Reportado por CSIRT UNAD.",
+            "valid_from": "2023-08-23T12:12:58.000Z",
+            "valid_until": "2024-12-05T12:12:58.000Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "MD5",
+                            "hash": "C151A88935F7050C43D29C9CF9DD30FF"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-1",
+                            "hash": "FCC475CB628A6FFD42F8B27E4DA8F43B6F18383F"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "2CFA617322BF08D1C0E7F988C6E532DED2DEF6509EA79063962D555CA035984F"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "d9a8bda0-92af-44d9-b193-38d053160e04",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--df0abdc9-0ef3-5121-8c5c-e9ee09e69060",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 100,
+            "created": "2025-06-24T18:58:11.405Z",
+            "modified": "2025-07-16T20:11:14.042Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'MD5' = 'BE9070CEF329332F8AFA74C091D2EF15' AND file:hashes.'SHA-1' = 'D1D836E7885404D6986E39907C361F3EEDB76B5A' AND file:hashes.'SHA-256' = '9F5A7D655C1227E0EA7E7409D1AAEFB956D3655C6125B757FC000E3EBA8B8EA0']",
+            "name": "Indicador de Phishing Bolet\u00edn UNAD IoC 260",
+            "description": "Nombre del archivo: DAVIVIENDA - C\u00c1RTER FINANCIERA REF. N \u00b0 0939495954.exe - Reportado por CSIRT UNAD.",
+            "valid_from": "2025-01-29T12:12:43.000Z",
+            "valid_until": "2025-10-31T09:32:14.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "MD5",
+                            "hash": "BE9070CEF329332F8AFA74C091D2EF15"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-1",
+                            "hash": "D1D836E7885404D6986E39907C361F3EEDB76B5A"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "9F5A7D655C1227E0EA7E7409D1AAEFB956D3655C6125B757FC000E3EBA8B8EA0"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "dd51e9c8-ba75-4ea8-9b0c-f3a0bbfe8971",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--23de82ca-d85a-59c4-8b1a-d5d4c516a7b3",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 100,
+            "created": "2025-06-24T18:58:11.394Z",
+            "modified": "2025-07-15T20:25:29.959Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'MD5' = '2A39AB7049226DEC986FA602A26F5372' AND file:hashes.'SHA-1' = 'F0BAF3B4F1DBCC6DD21E6F1279C741C0051C03CC' AND file:hashes.'SHA-256' = 'AD4CD780BD7ACCD7482DCF6222910AAFEE971C7AB870EBAE0022D51B237FA5CB']",
+            "name": "GenericPE Evasive Dropper 2025",
+            "description": "Nombre del archivo: DOCX-1458-7415-1025-41587-595-22025.exe - Reportado por CSIRT UNAD.",
+            "valid_from": "2025-02-26T16:43:59.000Z",
+            "valid_until": "2025-11-28T14:03:30.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "MD5",
+                            "hash": "2A39AB7049226DEC986FA602A26F5372"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-1",
+                            "hash": "F0BAF3B4F1DBCC6DD21E6F1279C741C0051C03CC"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "AD4CD780BD7ACCD7482DCF6222910AAFEE971C7AB870EBAE0022D51B237FA5CB"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "7cc6087e-3ef3-42a5-986a-a7cb48fb9717",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--7cceff77-6eed-5e79-9aa6-36a780f717fc",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 100,
+            "created": "2025-06-24T18:58:11.314Z",
+            "modified": "2025-07-16T17:27:23.191Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'MD5' = 'b606894e06eb8614659334a6977aa0a6' AND file:hashes.'SHA-1' = '4c74c7b8eac188f944e6343f0cfc56a0fa179657' AND file:hashes.'SHA-256' = '0b9a83a5a1a61381bd6ca5c3254726263dbcaa4a66f227f99c08475eb7256e25']",
+            "name": "Indicador de Phishing Bolet\u00edn UNAD IoC 263",
+            "description": "Nombre del archivo: 0b9a83a5a1a61381bd6ca5c3254726263dbcaa4a66f227f99c08475eb7256e25Ajokatodim.exe - Reportado por CSIRT UNAD.",
+            "valid_from": "2025-02-24T16:13:21.000Z",
+            "valid_until": "2025-11-26T13:32:52.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "MD5",
+                            "hash": "b606894e06eb8614659334a6977aa0a6"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-1",
+                            "hash": "4c74c7b8eac188f944e6343f0cfc56a0fa179657"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "0b9a83a5a1a61381bd6ca5c3254726263dbcaa4a66f227f99c08475eb7256e25"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "97f0a7f0-58ef-4bef-a42d-3674df7a99ad",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--2b9d82f3-9881-57d7-bc5d-8979eff9d88d",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 100,
+            "created": "2025-06-24T18:58:11.313Z",
+            "modified": "2025-07-15T20:31:48.733Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'MD5' = '16D89ABA9A671A47CEF29DEFBBAFC5BE' AND file:hashes.'SHA-1' = '6A319C68B03B03522C631FB43EB7AD2909742710' AND file:hashes.'SHA-256' = 'FC2E0C74F76A40C8469F14C8D8E681B1A112C05343BC5F819A7801DD436C3BA9']",
+            "name": "Malicious URL LegalPhish 2025",
+            "description": "Nombre del archivo: Documento Judicial 003949 - Proceso vigente N\u00ba 004885 - 002025.url - Reportado por CSIRT UNAD.",
+            "valid_from": "2025-02-06T17:48:02.000Z",
+            "valid_until": "2025-11-08T15:07:33.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "MD5",
+                            "hash": "16D89ABA9A671A47CEF29DEFBBAFC5BE"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-1",
+                            "hash": "6A319C68B03B03522C631FB43EB7AD2909742710"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "FC2E0C74F76A40C8469F14C8D8E681B1A112C05343BC5F819A7801DD436C3BA9"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "cd49357c-6191-48b6-8bb3-b6c55c1b8e90",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--a5094776-fa20-51cb-8f43-fc084a59cec6",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 100,
+            "created": "2025-06-24T18:58:11.313Z",
+            "modified": "2025-07-16T19:40:58.729Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'MD5' = '52A37B5E9EABDDDA2FDF8F069051BD9A' AND file:hashes.'SHA-1' = '6561609DC81A8C97987FB493AA966783DA67ABE6' AND file:hashes.'SHA-256' = '9CEA746D950911B0A03444D113085A73F5FD22AC857BE5CC89D6EE77F3BE59D4']",
+            "name": "Indicador de Phishing Bolet\u00edn UNAD IoC 261",
+            "description": "Nombre del archivo: https://t.co/m1OUNeLLwo - Reportado por CSIRT UNAD.",
+            "valid_from": "2025-02-03T15:03:21.000Z",
+            "valid_until": "2025-11-05T12:22:52.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "MD5",
+                            "hash": "52A37B5E9EABDDDA2FDF8F069051BD9A"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-1",
+                            "hash": "6561609DC81A8C97987FB493AA966783DA67ABE6"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "9CEA746D950911B0A03444D113085A73F5FD22AC857BE5CC89D6EE77F3BE59D4"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "9bb83dd4-ea5d-4932-8c16-599ec7571c0f",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--b44e7a5b-6dde-55cf-8057-ac961ee0a016",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 100,
+            "created": "2025-06-24T18:57:36.464Z",
+            "modified": "2025-07-16T19:54:15.974Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'MD5' = '1B714D76073A3C7AC0A7F7D35741FC2E' AND file:hashes.'SHA-1' = 'A31E6C78244B9880072C3E46DCB4F291B3A7A7B3' AND file:hashes.'SHA-256' = '50563DF2996764300536F0A0A1443A0A8A982E6F9825E2A5F48E95B799250CE0']",
+            "name": "Indicador de Phishing Bolet\u00edn UNAD IoC 267",
+            "description": "Nombre del archivo: Escrito_de_Alegatos_03_03_2025.js - Reportado por CSIRT UNAD.",
+            "valid_from": "2025-03-04T17:29:19.000Z",
+            "valid_until": "2025-12-04T14:48:50.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "MD5",
+                            "hash": "1B714D76073A3C7AC0A7F7D35741FC2E"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-1",
+                            "hash": "A31E6C78244B9880072C3E46DCB4F291B3A7A7B3"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "50563DF2996764300536F0A0A1443A0A8A982E6F9825E2A5F48E95B799250CE0"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "629a273b-9653-4127-b540-999f76689746",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--6ffede95-6961-5f0a-ac16-08bf1aed554e",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 100,
+            "created": "2025-06-24T18:57:36.451Z",
+            "modified": "2025-07-16T17:02:42.416Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'MD5' = 'CAEFACACF3DBA8F2D71A71BCB3B763A1' AND file:hashes.'SHA-1' = '58A1C905E4B81C926C36A22DFBC225E489300358' AND file:hashes.'SHA-256' = 'B83AE5D63D8F496B16DADDA6B1FAE7B2C4D1F8CA4266CDEB69EC9DCC96C439C0']",
+            "name": "Indicador de Phishing Bolet\u00edn UNAD IoC 266",
+            "description": "Nombre del archivo: Oficio_Proceso__Judicial_75634622.js - Reportado por CSIRT UNAD.",
+            "valid_from": "2025-03-01T18:14:42.000Z",
+            "valid_until": "2025-12-01T15:34:13.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "MD5",
+                            "hash": "CAEFACACF3DBA8F2D71A71BCB3B763A1"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-1",
+                            "hash": "58A1C905E4B81C926C36A22DFBC225E489300358"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "B83AE5D63D8F496B16DADDA6B1FAE7B2C4D1F8CA4266CDEB69EC9DCC96C439C0"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "782158a6-af1a-4047-9355-1c674250e568",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--81945608-3f6f-55ff-9bfc-3e182f2ad3af",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 100,
+            "created": "2025-06-24T18:57:36.390Z",
+            "modified": "2025-07-16T17:32:06.298Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'MD5' = '378E97BA871B7A3A22889D5A0F18894F' AND file:hashes.'SHA-1' = 'FCB5B9E85B7D6587C0B8DE4D7502A6C50A79F0B3' AND file:hashes.'SHA-256' = '50B8B1C73E6DE1D9DC2217B805DD8F5D16DA3BFC2BFD6C2D8999BCAC563EFC42']",
+            "name": "Indicador de Phishing Bolet\u00edn UNAD IoC 269",
+            "description": "Nombre del archivo: Fallo_de_tutela_J-25-03-2025.zip - Reportado por CSIRT UNAD.",
+            "valid_from": "2025-03-14T12:57:53.000Z",
+            "valid_until": "2025-12-14T10:17:24.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "MD5",
+                            "hash": "378E97BA871B7A3A22889D5A0F18894F"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-1",
+                            "hash": "FCB5B9E85B7D6587C0B8DE4D7502A6C50A79F0B3"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "50B8B1C73E6DE1D9DC2217B805DD8F5D16DA3BFC2BFD6C2D8999BCAC563EFC42"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "0035b2a1-0850-496d-9794-beeccb2c89b7",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--e9080b17-12e5-5a24-871f-db1b1daf0806",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 100,
+            "created": "2025-06-24T18:57:36.338Z",
+            "modified": "2025-07-16T20:14:31.548Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'MD5' = 'FBE047BCE5F918D1726C6B5F5189DCBA' AND file:hashes.'SHA-1' = '7F20DA344D2F39D6D18D8B845A65B12A20DE6A6F' AND file:hashes.'SHA-256' = '1D53F9E316BF2BCE3A8C2A7EF003B86F453A9D19963DE3E5381F71E24C50EF2A']",
+            "name": "Indicador de Phishing Bolet\u00edn UNAD IoC 268",
+            "description": "Nombre del archivo: Peticion_urgente_JS.zip - Reportado por CSIRT UNAD.",
+            "valid_from": "2025-03-13T10:46:27.000Z",
+            "valid_until": "2025-12-13T08:05:58.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "MD5",
+                            "hash": "FBE047BCE5F918D1726C6B5F5189DCBA"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-1",
+                            "hash": "7F20DA344D2F39D6D18D8B845A65B12A20DE6A6F"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "1D53F9E316BF2BCE3A8C2A7EF003B86F453A9D19963DE3E5381F71E24C50EF2A"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "82d4cecb-e72a-4650-a5d8-053cee3f87ee",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--6d32a011-9811-5d04-903b-f0ab99909758",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 100,
+            "created": "2025-06-24T18:57:36.280Z",
+            "modified": "2025-07-16T16:58:57.127Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'MD5' = 'FC478D04EAB0C771A5152C6AD25F7D2E' AND file:hashes.'SHA-1' = '70D7E3D4F357D0D5D3B42738FC234E3B2AD54CC2' AND file:hashes.'SHA-256' = 'E5B0A0B4B6D3DF3F7DB2F670F83A36EFD46F6B27B53DFD8F83D86C0EDB7A6613']",
+            "name": "Indicador de Phishing Bolet\u00edn UNAD IoC 265",
+            "description": "Nombre del archivo: Doc.Judicial.exe - Reportado por CSIRT UNAD.",
+            "valid_from": "2025-02-27T14:02:31.000Z",
+            "valid_until": "2025-11-29T11:22:02.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "MD5",
+                            "hash": "FC478D04EAB0C771A5152C6AD25F7D2E"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-1",
+                            "hash": "70D7E3D4F357D0D5D3B42738FC234E3B2AD54CC2"
+                        }
+                    ]
+                },
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "E5B0A0B4B6D3DF3F7DB2F670F83A36EFD46F6B27B53DFD8F83D86C0EDB7A6613"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "9744dfc3-ea3a-44df-ac48-ed2537f7d249",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--b463c294-b165-5a0f-a920-163606bc916e",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 100,
+            "created": "2025-06-24T18:53:16.857Z",
+            "modified": "2025-07-16T19:54:28.638Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = '23A778FF353A75880CC93B92A1503F005FDD26CBBE6D4175C42F5C5EA42FDA64']",
+            "name": "Phishing - trojan.dffcd/minerva",
+            "description": "Archivo: ACCIONAR TUTELA 0944.bat",
+            "valid_from": "2025-04-03T14:11:37.000Z",
+            "valid_until": "2026-01-03T11:31:08.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "23A778FF353A75880CC93B92A1503F005FDD26CBBE6D4175C42F5C5EA42FDA64"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "74b8778d-91fc-4f55-aba7-d06c9d296d63",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--8657729a-7515-560f-b7d5-d555840ceebd",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 100,
+            "created": "2025-06-24T18:53:16.779Z",
+            "modified": "2025-07-16T17:36:46.666Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = 'FB66632CD45196CC46DD75FFB02537E72772D6998F39743969BBAA1852362592']",
+            "name": "Phishing - dropper.zbot",
+            "description": "Archivo sospechoso: DOCUMENTO_COPIA_INCONSISTENCIA.vbs",
+            "valid_from": "2025-04-01T12:06:33.000Z",
+            "valid_until": "2026-01-01T09:26:04.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "FB66632CD45196CC46DD75FFB02537E72772D6998F39743969BBAA1852362592"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "3f197f99-fcf3-4d88-94f5-9690efe08dcb",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--225cb63e-3640-51ca-a022-d24a7cd59c67",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 100,
+            "created": "2025-06-24T18:53:16.774Z",
+            "modified": "2025-07-15T20:25:08.881Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = '9bc2a757994f0f865120d7b4734fd181556271fb15685235e58ef5b6acadf2ce']",
+            "name": "Phishing  ACUERDO DE TRANSACCI\u00d3N FINANCIERA",
+            "description": "Archivo: ACUERDO DE TRANSACCI\u00d3N FINANCIERA ACH ; 6897854.bat",
+            "valid_from": "2025-03-20T10:54:37.000Z",
+            "valid_until": "2025-12-20T08:14:08.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "9bc2a757994f0f865120d7b4734fd181556271fb15685235e58ef5b6acadf2ce"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "34077f28-7d44-4d7f-bf87-1f6b3aea919c",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--39be4900-eda3-55fe-9d77-fd32f0b5baaa",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 100,
+            "created": "2025-06-24T18:53:16.774Z",
+            "modified": "2025-07-15T20:37:42.254Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = '3bfd481026e41ec215bba23c36b8ca25b208ff836fe7b2ca4bea396ad9e83623']",
+            "name": "Phishing - trojan.brresmon",
+            "description": "Archivo sospechoso detectado",
+            "valid_from": "2025-03-31T17:09:37.000Z",
+            "valid_until": "2025-12-31T14:29:08.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "3bfd481026e41ec215bba23c36b8ca25b208ff836fe7b2ca4bea396ad9e83623"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "2ab48610-193f-46b8-9c33-de1df2549951",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--43f74651-c1ef-5cc7-b4e9-d2f072bd682a",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 100,
+            "created": "2025-06-24T18:50:56.468Z",
+            "modified": "2025-07-15T20:39:44.407Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = 'DE98A891F8F1A0DB1F23A63E984F065DC8E13A3E907DACF1E56A407493A0E01B']",
+            "name": "Phishing - BAT/Agent.QSP!tr",
+            "description": "Archivo: INFORME DE RADICACI\u00d3N.pdf.bat",
+            "valid_from": "2025-05-13T10:31:14.000Z",
+            "valid_until": "2026-02-12T07:50:45.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "DE98A891F8F1A0DB1F23A63E984F065DC8E13A3E907DACF1E56A407493A0E01B"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "697d6d34-2f98-4e0f-a461-290ee1b7f536",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--0c790c2d-133f-5cf1-aca6-9882635ded91",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 100,
+            "created": "2025-06-24T18:50:56.451Z",
+            "modified": "2025-07-15T20:24:48.909Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = '25129CB3E0EE9D2F6F77C5B80D2A2549418E2193EF20225DF445823407D76B0F']",
+            "name": "Phishing  trojan.msil/quasar",
+            "description": "Archivo: wwwramajudicialgovcoproceso000000700940300540666222.exe",
+            "valid_from": "2025-05-12T15:11:28.000Z",
+            "valid_until": "2026-02-11T12:30:59.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "25129CB3E0EE9D2F6F77C5B80D2A2549418E2193EF20225DF445823407D76B0F"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "bd9860eb-b2c3-4b69-90a8-38aa742c0007",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--982d6465-a2ad-566f-91d8-559fb2bbd3d3",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 100,
+            "created": "2025-06-24T18:50:56.374Z",
+            "modified": "2025-07-16T19:35:59.573Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = 'BBFFAD27C461196ED26373C09B8C72753C1752D5C720F7CA8A1F24AE9B87396F']",
+            "name": "Phishing - downloader.ackb",
+            "description": "Archivo: Cam_Scanner_mayo#0505202510070000.js",
+            "valid_from": "2025-05-07T09:57:16.000Z",
+            "valid_until": "2026-02-06T07:16:47.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "BBFFAD27C461196ED26373C09B8C72753C1752D5C720F7CA8A1F24AE9B87396F"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "4dc468e1-9da4-4298-888f-43f320295d27",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--751dcc80-6d0c-56c4-af33-dc068acddf98",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 100,
+            "created": "2025-06-24T18:50:56.372Z",
+            "modified": "2025-07-16T17:14:32.026Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = '69242e974eca191b1ac54a0ed754ed3966cd1bcf8b75335b6decbe2449bb4081']",
+            "name": "Phishing - trojan.tedy/genericrxlo",
+            "description": "Archivo: Comprobante_de_Pago__7122.exe",
+            "valid_from": "2025-04-23T15:13:01.000Z",
+            "valid_until": "2026-01-23T12:32:32.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "69242e974eca191b1ac54a0ed754ed3966cd1bcf8b75335b6decbe2449bb4081"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "1ba6c160-1f8d-4933-abc0-6aa5c915f94b",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--6c205de0-975e-51df-90a8-7185aa98ebc7",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 100,
+            "created": "2025-06-24T00:00:00.000Z",
+            "modified": "2025-07-16T16:57:52.670Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = 'ca4c2c9cf4320a7f95865a135ec463742ecb3149d174a7d3ee45972f3625e135']",
+            "name": "downloader.abxz",
+            "description": "Script .vbs identificado como downloader.abxz \u2014 Fuente: Bolet\u00edn IoC_284 CSIRT UNAD",
+            "valid_from": "2025-05-19T00:00:00.000Z",
+            "valid_until": "2026-02-17T21:19:31.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "ca4c2c9cf4320a7f95865a135ec463742ecb3149d174a7d3ee45972f3625e135"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "6a034cc4-b7f1-4bc8-b7b7-77646ae9e01a",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--18f47853-9d1f-54d1-8111-601a2e9d8bae",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 100,
+            "created": "2025-06-24T00:00:00.000Z",
+            "modified": "2025-07-15T20:24:57.234Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = '9841B2B0EEDD10CA072DED35EB49117B5941378996C3DD4D3CD3B6DE50087763']",
+            "name": "AsyncRAT RAT Remote Access 2025",
+            "description": "Archivo ejecutable vinculado a actividad phishing \u2014 Fuente: Bolet\u00edn IoC_283 CSIRT UNAD",
+            "valid_from": "2025-05-19T00:00:00.000Z",
+            "valid_until": "2026-02-17T21:19:31.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "9841B2B0EEDD10CA072DED35EB49117B5941378996C3DD4D3CD3B6DE50087763"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "eef323fa-2316-4271-81f1-ed7653da461f",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--08cd16e5-6218-5192-ac8d-e7a5fda58997",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 100,
+            "created": "2025-06-24T00:00:00.000Z",
+            "modified": "2025-07-15T20:24:39.817Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = '486E05B780FAD9B2281A1923F8653E0C725D2FC304894CD6E9DD5BF3ECCD705F']",
+            "name": "AsyncRAT Remote Access 2025",
+            "description": "Malware identificado como trojan.penguish/asyncrat \u2014 Fuente: Bolet\u00edn IoC_282 CSIRT UNAD",
+            "valid_from": "2025-05-16T00:00:00.000Z",
+            "valid_until": "2026-02-14T21:19:31.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "486E05B780FAD9B2281A1923F8653E0C725D2FC304894CD6E9DD5BF3ECCD705F"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "92f0af45-09fc-4396-817f-07527cbc8e7b",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--8463612c-134c-58f1-9869-0db2f4224df3",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 100,
+            "created": "2025-06-24T00:00:00.000Z",
+            "modified": "2025-07-16T17:34:51.636Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = 'FBFAA29E332EE5E89DEA7F8EAADD6E271975C21D2D1AA41C9C9A8E533B6F2798']",
+            "name": "RAD-7458-JVURJ-7455-GRVRD-0415-2025.exe",
+            "description": "Ejecutable identificado como trojan.filerepmalware \u2014 Fuente: Bolet\u00edn IoC_280 CSIRT UNAD",
+            "valid_from": "2025-05-14T00:00:00.000Z",
+            "valid_until": "2026-02-12T21:19:31.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "FBFAA29E332EE5E89DEA7F8EAADD6E271975C21D2D1AA41C9C9A8E533B6F2798"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "9f9c2d8e-aba9-4cbc-9124-497575a0d2cf",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--a6de7696-d379-5970-b646-eaec018cebb1",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 100,
+            "created": "2025-06-24T00:00:00.000Z",
+            "modified": "2025-07-16T19:43:40.714Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = '903D746BFE35949669C52734359A07E024F04B1DBD1F9FE009331B79A2DC872F']",
+            "name": "ARCHIV_PDF_1305_1111_777_1255554569225632865655KJ DVJNBHBSXC.exe",
+            "description": "Ejecutable con actividad sospechosa tipo trojan \u2014 Fuente: Bolet\u00edn IoC_281 CSIRT UNAD",
+            "valid_from": "2025-05-14T00:00:00.000Z",
+            "valid_until": "2026-02-12T21:19:31.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "903D746BFE35949669C52734359A07E024F04B1DBD1F9FE009331B79A2DC872F"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "c1fe51ea-8bc8-45bf-bed6-dc679bd28350",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--7da29aab-2d95-5221-8631-885f743c6254",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 100,
+            "created": "2025-06-24T00:00:00.000Z",
+            "modified": "2025-07-16T17:29:02.899Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = '06324AD0F395C908EC2D9A7D8B59F7F026BADB34F6284EE6A0DB9C010A19E53A']",
+            "name": "JavaScript-ofuscado",
+            "description": "Script JS malicioso distribuido por phishing \u2014 Fuente: Bolet\u00edn IoC_285 CSIRT UNAD",
+            "valid_from": "2025-05-21T00:00:00.000Z",
+            "valid_until": "2026-02-19T21:19:31.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "06324AD0F395C908EC2D9A7D8B59F7F026BADB34F6284EE6A0DB9C010A19E53A"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "a5ec818a-2eed-41bc-a5ef-e907fc157538",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--d1ddedfb-02b0-5131-935b-bc9a954bebbc",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 100,
+            "created": "2025-06-24T00:00:00.000Z",
+            "modified": "2025-07-16T20:04:06.030Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = '42ABD6F5D64579132C1AF15AE5D7502952E70A218AA3660D42F661816E2D397E']",
+            "name": "Unknown_Payload_2025_42ABD6F5.exe",
+            "description": "Ejecutable detectado como Trojan:Win32/Sonbokli.A!cl \u2014 Fuente: Bolet\u00edn IoC_286 CSIRT UNAD",
+            "valid_from": "2025-05-26T00:00:00.000Z",
+            "valid_until": "2026-02-24T21:19:31.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "42ABD6F5D64579132C1AF15AE5D7502952E70A218AA3660D42F661816E2D397E"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "c7355f97-30ba-4e43-bb26-a9ca5403e9bf",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--82dfb877-5984-5d2a-8ebf-45d1aea14092",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 100,
+            "created": "2025-06-24T00:00:00.000Z",
+            "modified": "2025-07-16T17:33:46.564Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = 'FF5C206C79BB64015862404D9CCA0B519D7CD32C13AD4985A0C52FDC8B17DEFB']",
+            "name": "Phishing Judicial URLLoader Remoto",
+            "description": "Phishing por acceso directo malicioso desde 62.60.226.165 \u2014 Fuente: Bolet\u00edn IoC_289 CSIRT UNAD",
+            "valid_from": "2025-06-11T00:00:00.000Z",
+            "valid_until": "2026-03-12T21:19:31.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "FF5C206C79BB64015862404D9CCA0B519D7CD32C13AD4985A0C52FDC8B17DEFB"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "c9c781b5-4c1e-4b37-9ae5-7e2d2d0cab42",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        },
+        {
+            "id": "indicator--71b297af-dac1-5bdf-9538-a18fa8c99736",
+            "spec_version": "2.1",
+            "revoked": false,
+            "confidence": 100,
+            "created": "2025-06-24T00:00:00.000Z",
+            "modified": "2025-07-16T17:08:02.260Z",
+            "pattern_type": "stix",
+            "pattern": "[file:hashes.'SHA-256' = 'F98B49AA5EC566EF5F075F0BB56D0ECE3B6752A9CAED873633DFA833E44A7BED']",
+            "name": "VBScript downloader",
+            "description": "Archivo sospechoso con extensi\u00f3n .vbs - actividad downloader \u2014 Fuente: Bolet\u00edn IoC_287 CSIRT UNAD",
+            "valid_from": "2025-05-29T00:00:00.000Z",
+            "valid_until": "2026-02-27T21:19:31.835Z",
+            "x_opencti_score": 50,
+            "x_opencti_detection": false,
+            "x_opencti_main_observable_type": "Unknown",
+            "x_opencti_observable_values": [
+                {
+                    "type": "StixFile",
+                    "value": null,
+                    "hashes": [
+                        {
+                            "algorithm": "SHA-256",
+                            "hash": "F98B49AA5EC566EF5F075F0BB56D0ECE3B6752A9CAED873633DFA833E44A7BED"
+                        }
+                    ]
+                }
+            ],
+            "labels": [
+                "phishing"
+            ],
+            "x_opencti_id": "ef3b323a-f12c-46d3-a780-a6f93d5a0f41",
+            "x_opencti_type": "Indicator",
+            "type": "indicator"
+        }
+    ]
+}
