@@ -40,4 +40,4 @@ Screenshots
 
 ## 👤 Autor
 Johann Alexander Soto Hernández
-GitHub : https://github.com/johannsoto | LinkedIn : https://www.linkedin.com/in/johann-alexander-soto-h-bb6182208/
+[GitHub](https://github.com/johannsoto) | [LinkedIn](https://www.linkedin.com/in/johann-alexander-soto-h-bb6182208/)
