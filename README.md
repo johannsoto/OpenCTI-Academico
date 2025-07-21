@@ -39,5 +39,5 @@ Screenshots
 (Marzo 2025 - Agosto 2025)
 
 ## 👤 Autor
-Johann Alexander Soto Hernández
+Johann Alexander Soto Hernández 
 [GitHub](https://github.com/johannsoto) | [LinkedIn](https://www.linkedin.com/in/johann-alexander-soto-h-bb6182208/)
