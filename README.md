@@ -32,7 +32,7 @@ Gestionar y documentar incidentes de ciberseguridad en el orden academico de la 
 - Automatización parcial del pipeline de carga con Python
 
 ## 📸 Capturas de pantalla
-
+screenshots
 
 ## 📅 Fecha del proyecto
 (Marzo 2025 - Agosto 2025)
