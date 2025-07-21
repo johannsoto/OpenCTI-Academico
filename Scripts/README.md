@@ -16,8 +16,8 @@ El archivo debe contener dos columnas:
 
 | IP              | agent.name         |
 |-----------------|--------------------|
-| 156.228.118.48  | aurea-01           |
-| 104.207.34.48   | aurea2-monitor     |
+| xxx.xxx.xxx.xxx  | xxxxx    |
+| xxx.xxx.xxx.xxx  | xxxxx    |
 
 ---
 
